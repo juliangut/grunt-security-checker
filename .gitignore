@@ -1,0 +1,6 @@
+node_modules
+npm-debug.log
+vendor
+composer.lock
+!test/composer.lock
+tmp
