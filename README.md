@@ -1,4 +1,9 @@
-# grunt-security-checker
+[![Latest Version](https://img.shields.io/npm/v/grunt-security-checker.svg?style=flat-square)](https://npmjs.org/package/grunt-security-checker)
+[![License](https://img.shields.io/github/license/juliangut/grunt-security-checker.svg?style=flat-square)](https://github.com/juliangut/grunt-security-checker/blob/master/LICENSE)
+
+[![Total Downloads](https://img.shields.io/npm/dt/grunt-security-checker.svg?style=flat-square)](https://npmjs.org/package/grunt-security-checker)
+
+# security-checker Grunt plugin
 
 > Grunt plugin for running [security-checker](https://github.com/sensiolabs/security-checker)
 
@@ -82,12 +87,10 @@ grunt.initConfig({
 
 ## Contributing
 
-Found a bug or have a feature request? [Please open a new issue](https://github.com/juliangut/grunt-security-checker/issues). Have a look at existing issues before
+Found a bug or have a feature request? [Please open a new issue](https://github.com/juliangut/grunt-security-checker/issues). Have a look at existing issues before.
 
 See file [CONTRIBUTING.md](https://github.com/juliangut/grunt-security-checker/blob/master/CONTRIBUTING.md)
 
 ## License
 
-### Release under BSD-3-Clause License.
-
-See file [LICENSE](https://github.com/juliangut/grunt-security-checker/blob/master/LICENSE) included with the source code for a copy of the license terms
+See file [LICENSE](https://github.com/juliangut/grunt-security-checker/blob/master/LICENSE) included with the source code for a copy of the license terms.

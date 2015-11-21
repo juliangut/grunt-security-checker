@@ -6,7 +6,7 @@
     "php",
     "security-checker"
   ],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/juliangut/grunt-security-checker",
   "author": {
     "name": "Julián Gutiérrez",
