@@ -33,7 +33,7 @@ module.exports = function(grunt) {
     }
 
     if (config.format !== undefined) {
-      config.format = config.format.replace(/^\s+|\s+$/g, '').toLowerCase();
+      config.format = config.format.replace(/\s+/g, '').toLowerCase();
 
       if (['text', 'simple', 'json'].indexOf(config.format) === -1) {
         grunt.verbose.error();

@@ -1,5 +1,5 @@
 {
     "require": {
-        "sensiolabs/security-checker": "^2.0"
+        "sensiolabs/security-checker": "^3.0"
     }
 }
