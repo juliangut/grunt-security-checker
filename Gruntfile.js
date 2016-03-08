@@ -2,13 +2,17 @@
  * grunt-security-checker
  * https://github.com/juliangut/grunt-security-checker
  *
- * Copyright (c) 2015 Julián Gutiérrez (juliangut@gmail.com)
- * Licensed under the BSD-3-Clasue license.
+ * Copyright (c) 2016 Julián Gutiérrez (juliangut@gmail.com)
+ * Licensed under the BSD-3-Clause license.
  */
 
 'use strict';
 
 module.exports = function(grunt) {
+  require('time-grunt')(grunt);
+  require('load-grunt-tasks')(grunt);
+
+  grunt.loadTasks('tasks');
 
   grunt.initConfig({
     jshint: {
@@ -16,6 +20,16 @@ module.exports = function(grunt) {
         jshintrc: '.jshintrc'
       },
       all: [
+        'Gruntfile.js',
+        'tasks/**/*.js'
+      ]
+    },
+    jscs: {
+      options: {
+        config: '.jscsrc',
+        verbose: true
+      },
+      application: [
         'Gruntfile.js',
         'tasks/**/*.js'
       ]
@@ -40,7 +54,7 @@ module.exports = function(grunt) {
       default_options: {
         file: './test/composer.lock'
       },
-      custon_attributes: {
+      custom_attributes: {
         options: {
           format: 'json',
           output: './tmp'
@@ -50,12 +64,5 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadTasks('tasks');
-
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-mkdir');
-
-  grunt.registerTask('default', ['jshint', 'clean', 'mkdir', 'security_checker']);
-
+  grunt.registerTask('default', ['jshint', 'jscs', 'clean', 'mkdir', 'security_checker']);
 };

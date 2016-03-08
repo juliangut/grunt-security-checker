@@ -2,6 +2,7 @@
 [![License](https://img.shields.io/github/license/juliangut/grunt-security-checker.svg?style=flat-square)](https://github.com/juliangut/grunt-security-checker/blob/master/LICENSE)
 
 [![Total Downloads](https://img.shields.io/npm/dt/grunt-security-checker.svg?style=flat-square)](https://npmjs.org/package/grunt-security-checker)
+[![Monthly Downloads](https://img.shields.io/npm/dm/grunt-security-checker.svg?style=flat-square)](https://npmjs.org/package/grunt-security-checker)
 
 # security-checker Grunt plugin
 

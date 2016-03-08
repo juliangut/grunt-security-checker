@@ -2,8 +2,8 @@
  * grunt-security-checker
  * https://github.com/juliangut/grunt-security-checker
  *
- * Copyright (c) 2015 Julián Gutiérrez (juliangut@gmail.com)
- * Licensed under the BSD-3-Clasue license.
+ * Copyright (c) 2016 Julián Gutiérrez (juliangut@gmail.com)
+ * Licensed under the BSD-3-Clause license.
  */
 
 'use strict';
@@ -12,7 +12,6 @@ var path = require('path');
 var exec = require('child_process').exec;
 
 module.exports = function(grunt) {
-
   var attributes = {
     format: 'format',
     endPoint: 'end-point',
@@ -84,5 +83,4 @@ module.exports = function(grunt) {
       return done();
     });
   });
-
 };

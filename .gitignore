@@ -1,6 +1,6 @@
-node_modules
+node_modules/
 npm-debug.log
-vendor
+vendor/
 composer.lock
 !test/composer.lock
-tmp
+tmp/
